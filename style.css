@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+.block{
+    height: 100%;
+    width: 100vw;
+    overflow: hidden;
+}
+
+body{
+    overflow: hidden;
+    background-image: url(https://cdn.wallpapersafari.com/45/63/Ezuc1k.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.Mcquuen{
+    position: absolute;
+    left: 400px;
+    bottom: 10px; 
+    animation:  McQueen 2s linear;
+}
+
+.box{
+    margin-top: 60vh;
+    
+}
+
+.logo{
+    position: absolute;
+    width: 300px;
+    left: 40vw;
+   
+}
+
+.logo:nth-child(1){
+    position: absolute;
+    width: 300px;
+    left: 40vw;
+    z-index: 1;
+    top: 6px;
+    animation:  Logo 10s linear infinite;
+}
+
+.logo:nth-child(2){
+    position: absolute;
+    width: 300px;
+    left: 40vw;
+    z-index: 2;
+    top: 5px;
+}
+
+@keyframes Logo {
+    0%{
+        z-index: 1;
+    }
+    100%{
+        z-index: 3; 
+    }
+}
+
+
+
+.meter{
+    position: absolute;
+    width: 400px;
+    right: 400px;
+    animation: meter 2s linear;
+}
+
+@keyframes meter{
+    0%{
+        transform: translate(700px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+}
+
+@keyframes McQueen{
+    0%{
+        transform: translate(-700px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+}
